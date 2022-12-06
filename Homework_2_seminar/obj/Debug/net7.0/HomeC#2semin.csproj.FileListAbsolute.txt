@@ -1,0 +1,15 @@
+C:\Users\Евгений\Desktop\HomeC#2semin\bin\Debug\net7.0\HomeC#2semin.exe
+C:\Users\Евгений\Desktop\HomeC#2semin\bin\Debug\net7.0\HomeC#2semin.deps.json
+C:\Users\Евгений\Desktop\HomeC#2semin\bin\Debug\net7.0\HomeC#2semin.runtimeconfig.json
+C:\Users\Евгений\Desktop\HomeC#2semin\bin\Debug\net7.0\HomeC#2semin.dll
+C:\Users\Евгений\Desktop\HomeC#2semin\bin\Debug\net7.0\HomeC#2semin.pdb
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\HomeC#2semin.csproj.AssemblyReference.cache
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\HomeC#2semin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\HomeC#2semin.AssemblyInfoInputs.cache
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\HomeC#2semin.AssemblyInfo.cs
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\HomeC#2semin.csproj.CoreCompileInputs.cache
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\HomeC#2semin.dll
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\refint\HomeC#2semin.dll
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\HomeC#2semin.pdb
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\HomeC#2semin.genruntimeconfig.cache
+C:\Users\Евгений\Desktop\HomeC#2semin\obj\Debug\net7.0\ref\HomeC#2semin.dll
