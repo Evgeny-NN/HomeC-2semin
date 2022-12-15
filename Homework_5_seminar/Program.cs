@@ -98,14 +98,15 @@ Console.WriteLine("Sum of nambers on not even position is " + result);
 //Задача 38: Задайте массив вещественных чисел. Найдите разницу между 
 //максимальным и минимальным элементов массива.
 
-double[] CreateRandomArray(int size, double minValue, double maxValue)
+
+double[] CreateRandomArray(int size, int minValue, int maxValue)
 {
     double[] array = new double[size];
 
-    Random rnd = new Random();
+   
     for (int i = 0; i < size; i++)
     {
-        array[i] = rnd.NextDouble() + rnd.Next((int)minValue, (int)maxValue);
+        array[i] = new Random().NextDouble() + new Random().Next(minValue, maxValue);
     }
     return array;
 }
@@ -134,19 +135,19 @@ double GetDif(double[] array)
 
     }
     double difference = max - min;
-    return difference;
+    return Math.Round(difference, 3);
 }
 
 Console.Write("Введите количество элементов: ");
 int size = Convert.ToInt32(Console.ReadLine());
 Console.Write("min value: ");
-double min = Convert.ToDouble(Console.ReadLine());
+int min = Convert.ToInt32(Console.ReadLine());
 Console.Write("max value: ");
-double max = Convert.ToDouble(Console.ReadLine());
+int max = Convert.ToInt32(Console.ReadLine());
 
 double[] myArray = CreateRandomArray(size, min, max);
 ShowArray(myArray);
 
-double result = (double)GetDif(myArray);
+double result = GetDif(myArray);
 
 Console.WriteLine("difference of values max and min " + result);
