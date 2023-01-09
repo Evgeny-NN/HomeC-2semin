@@ -4,9 +4,9 @@
 
 int[,] CreateRandom2dArray()
 {
-    Console.Write("Input current of rows: ");
+    Console.Write("Input number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Input current of colums: ");
+    Console.Write("Input number of colums: ");
     int colums = Convert.ToInt32(Console.ReadLine());
     Console.Write("Input a min possible value: ");
     int minValue = Convert.ToInt32(Console.ReadLine());
@@ -61,9 +61,9 @@ Show2dArray(myArray);
 
 int[,] CreateRandom2dArray()
 {
-    Console.Write("Input current of rows: ");
+    Console.Write("Input number of rows: ");
     int rows = Convert.ToInt32(Console.ReadLine());
-    Console.Write("Input current of colums: ");
+    Console.Write("Input number of colums: ");
     int colums = Convert.ToInt32(Console.ReadLine());
     Console.Write("Input a min possible value: ");
     int minValue = Convert.ToInt32(Console.ReadLine());
@@ -167,9 +167,9 @@ int[,] ProizvedenieMatrix(int[,] firstArray, int[,] secondArray, int rows, int c
     return resultArray;
 }
 
-Console.Write("Input current of rows: ");
+Console.Write("Input number of rows: ");
 int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input current of colums: ");
+Console.Write("Input number of colums: ");
 int colums = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a min possible value: ");
 int minValue = Convert.ToInt32(Console.ReadLine());
@@ -189,6 +189,7 @@ Show2dArray(resultArray);
 // Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.
 // Массив размером 2 x 2 x 2
 
+/*
 int[,,] CreateRandom3dArray(int[] array1d, int pages, int rows, int colums)
 {
     int[,,] array3d = new int[pages, rows, colums];
@@ -252,11 +253,11 @@ int[] CreateArray1d(int pages, int rows, int colums)   // создаём слу�
     return array1d;
 }
 
-Console.Write("Input current of pages: ");
+Console.Write("Input number of pages: ");
 int pages = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input current of rows: ");
+Console.Write("Input number of rows: ");
 int rows = Convert.ToInt32(Console.ReadLine());
-Console.Write("Input current of colums: ");
+Console.Write("Input number of colums: ");
 int colums = Convert.ToInt32(Console.ReadLine());
 
 int[] myArray1d = CreateArray1d(pages, rows, colums);
@@ -264,6 +265,50 @@ int[,,] myArray3d = CreateRandom3dArray(myArray1d, pages, rows, colums);
 Console.WriteLine();
 Show3dArray(myArray3d);
 
-
+*/
 
 //Задача 62. Напишите программу, которая заполнит спирально массив 4 на 4.
+
+int[,] CreateRandom2dArray()
+{
+    Console.Write("Input number of rows: ");
+    int rows = Convert.ToInt32(Console.ReadLine());
+    Console.Write("Input number of colums: ");
+    int colums = Convert.ToInt32(Console.ReadLine());
+    
+    int[,] array = new int[rows, colums];
+    int current = 1;
+
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < colums; j++)
+        {
+            array[i, j] = current;
+            current += 1;
+        }
+        for (int k=3; k<rows;i++, k++)
+        { 
+            array[i, k] = current;
+             current += 1;
+
+        }
+    }
+    //for
+    //for
+
+    return array;
+}
+void Show2dArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+            Console.Write(array[i, j] + " ");
+        Console.WriteLine();
+    }
+    Console.WriteLine();
+}
+
+int[,] myArray = CreateRandom2dArray();
+Console.WriteLine();
+Show2dArray(myArray);
